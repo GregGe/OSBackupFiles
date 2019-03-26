@@ -1,0 +1,583 @@
+#!/bin/bash
+# dpt:
+#   Pull project source code from svn server;
+#   Build the project;
+#   Copy the images to specific dir and zip.
+#
+
+#
+# 0.1.9 [2013.12.30]
+#   1 bugfix, fixed build params passed lacking, such as 'wcdma'.
+# 0.1.8 [2013.08.16]
+#   1 import param 'PRENAM', pre-set project workspace name.
+#   2 modified copyed destination path, add child dir named project name.
+# 0.1.7 [2013.05.25]
+#   1 support extra params(such as td).
+# 0.1.6 [2013.03.23]
+#   1 support spec project space.
+# 0.1.5 [2013.01.29]
+#   1 support push anywhere.
+#   2 support tadb.
+# 0.1.4 [2012.12.19]
+#   1 build result report.
+# 0.1.3 [2012.04.19]
+#   1 add dpush and etc.
+# 0.1.2 [2012.03.31]
+#   1 add single module building support(dmm).
+# 0.1.1 [2012.03.27]
+#   1 add $copy comment.
+# 0.1.0 [2012.02.28] beta
+#   1 finish basic functions.
+# 0.0.1 
+#   1 create.
+#
+
+version="dpt (Android devtools) 0.1.5
+Copyright (C) 2012 TYD Co, Inc.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by BianTao."
+
+usage="Usage: `basename $0` [OPTION]... PROJECT
+Pull new project source code from svn server, and(or) build with(out) copying images.
+
+Options:
+
+  -d     checkout (default export) project source code from svn server. 
+  -b     build the project(default without building).
+  -u     build with TARGET_BUILD_VARIANT:'usr'(default 'eng').
+  -c     copy the product images to \$TOPDIR/IMGS/.
+  -z     zip the product images in target dir.
+  -B     only enable build function(default only pull project source code), 
+           could used with -C -r.
+  -C     only enable copy product images function(default as above), could 
+           user with -B -z.
+  -P     special target project space.
+  -V [--revision] revision of codes will be downloaded.
+     -h   display this help and exit
+     -v   output version information and exit
+
+Report bugs to <biantao@tydtech.com>."
+
+
+export USE_CCACHE=1
+
+readonly PRJFILE="PROJECTS.ini"
+readonly FIELDN="NAME"          # dev name
+readonly FIELDU="URL"           # svn url
+readonly FIELDP0="PMAINS"
+readonly FIELDPE="PEXTRS"
+readonly FIELDF0="FMAINS"
+readonly FIELDF1="FADITS"
+readonly FIELDPR="PRENAM"       # pre-set name
+# getval file prj field
+function getval()
+{
+    echo $(sed -n "/\[$2\]/,/\[.*\]/{
+  /^\[.*\]/d
+  /^[ ]*$/d
+  s/;.*$//
+  s/^[ |        ]*$3[ | ]*=[ |  ]*\(.*\)[ |     ]*/\1/p
+  }" $1)
+}
+
+# getval file key
+function getval_s()
+{
+    echo $(sed -n "
+  /^\[.*\]/d
+  /^[ ]*$/d
+  s/;.*$//
+  s/^[ |        ]*$2[ | ]*=[ |  ]*\(.*\)[ |     ]*/\1/p
+  " $1)
+}
+
+# getcode co url dir version
+function getcode()
+{
+    local CMD="svn"
+
+    local CO=
+    if [ "$1" = "F" ]; then
+        CO="export"
+    else 
+        CO="co"
+    fi
+
+    [ -d "$3" ] && echo "Cleaning ..." && rm -rf $3
+
+    local VER=
+    if [ "$4" ]; then
+        VER="-r${4}"
+    fi
+    CMD="${CMD} ${CO} ${VER} $2 $3"
+
+    echo "Pulling << $CMD"
+    $CMD
+}
+
+# buildprj workdir buildprj {extra-options}
+function buildprj()
+{
+    #local MKPREFIX="./makeMtk"
+    local MKPREFIX="./mk"
+
+    local HERE=`pwd`
+    cd $1 > /dev/null
+
+    local FLAGS="$3"
+    #read FLASG
+    #[ ! "$3" = "" ] && FLAGS="-o=TARGET_BUILD_VARIANT=$3"
+
+    local CMD="${MKPREFIX} ${FLAGS} $2 new"
+
+    echo $CMD && $CMD
+
+    cd $HERE > /dev/null
+}
+
+# getbins PRJ prj-dir target-dir(NOTE: relative to prj-dir)
+function getbins()
+{
+    local BUILD_NAME=`getval ${PRJFILE} $1 ${FIELDN}`
+    local MAIN_PPATH=`getval ${PRJFILE} $1 ${FIELDP0}`
+    local MAIN_FILES=`getval ${PRJFILE} $1 ${FIELDF0}`
+    local ADIT_FILES=`getval ${PRJFILE} $1 ${FIELDF1}`
+
+    #===test===
+    #[ ! "${MAIN_PPATH}" ] || [ ! "${MAIN_FILES}" ] || [ ! "${ADIT_FILES}" ] && exit 0
+    [ ! "${MAIN_PPATH}" ] || [ ! "${MAIN_FILES}" ] && exit 0
+    #==========
+
+    local HERE=`pwd`
+    cd $2 > /dev/null
+
+    croot
+
+    # ---
+    local D="$3"
+    ### @{ add child-folder, such as IMGS/A9
+    D="${D}/${1}"
+    ### @}
+    [ ! "${D:0:1}" = "/" ] && D="`pwd`/${D}"
+    
+    [ -d "$D" ] && echo "Cleaning..." && rm -rf "$D"
+    mkdir -p "$D"
+
+    # ---
+    # make main path
+    MAIN_PPATH="${MAIN_PPATH}/${BUILD_NAME}"
+
+    # ---
+    # test exist
+    [ ! -f "${MAIN_PPATH}/system.img" ] && echo "Imgs Not Exist..." && exit 0
+
+    # ---
+    echo "Coping..."
+    # cp additional imgs
+    ADIT_FILES=$(printf "$ADIT_FILES" ${BUILD_NAME})
+    cp $ADIT_FILES $D
+
+    # cd target dir & cp main files
+    cd "$MAIN_PPATH" > /dev/null
+    for F in $MAIN_FILES
+    do 
+        find . -maxdepth 1 -name "$F" | xargs -i ls -al {} | awk '{system("cp "$NF" '"$D"'")}'
+    done
+
+    # zip. Change path to compress...
+    [ "$4" = "T" ] && zpak $1 $D
+
+
+    cd $HERE > /dev/null
+}
+
+# zpak PRJ path
+function zpak()
+{
+    local HERE=`pwd`
+
+    cd "$2" > /dev/null
+    local N="${1}_`date +%0Y%0m%0d_%0k%0M`.zip"
+    zip -q -r $N .
+
+    cd $HERE > /dev/null
+}
+
+function gettop()
+{
+    local TOPFILE=build/core/envsetup.mk
+    if [ -n "$TOP" -a -f "$TOP/$TOPFILE" ] ; then
+        echo $TOP
+    else
+        if [ -f $TOPFILE ] ; then
+            # The following circumlocution (repeated below as well) ensures
+            # that we record the true directory name and not one that is
+            # faked up with symlink names.
+            PWD= /bin/pwd
+        else
+            # We redirect cd to /dev/null in case it's aliased to
+            # a command that prints something as a side-effect
+            # (like pushd)
+            local HERE=$PWD
+            T=
+            while [ \( ! \( -f $TOPFILE \) \) -a \( $PWD != "/" \) ]; do
+                cd .. > /dev/null
+                T=`PWD= /bin/pwd`
+            done
+            cd $HERE > /dev/null
+            if [ -f "$T/$TOPFILE" ]; then
+                echo $T
+            fi
+        fi
+    fi
+}
+
+function croot()
+{
+    T=$(gettop)
+    if [ "$T" ]; then
+        cd $(gettop)
+    else
+        echo "Couldn't locate the top of the tree.  Try setting TOP."
+        exit 0
+    fi
+}
+
+readonly MM_TMP="${HOME}/.mm_tmp"
+[ ! -f "${MM_TMP}" ] && touch ${MM_TMP}
+# dmm {module-path}
+function dmm()
+{
+    # ./mk hsimobile73_gb mm packages/apps/*
+    readonly local CMD_FORMAT="./makeMtk %s mm %s"
+    readonly local PN_FILE="makeMtk.ini"
+    readonly local PN_KEY="project"
+
+    local HERE=`pwd`
+
+
+    # get TOPDIR 
+    local TOPDIR=$(gettop)
+    [ ! "${TOPDIR}" ] && echo "Couldn't locate the top of the tree.  Try setting TOP." && exit 1
+
+    # to TARGET path
+    [ "$1" ] && cd $1
+    local CDIR=$(pwd)
+    # Remove the path to top as the makefilepath needs to be relative
+    local M=`echo ${CDIR}|sed 's:'${TOPDIR}'/::'`
+
+    # to ROOT dir
+    cd ${TOPDIR}
+    
+    # get product name FROM $PN_FILE
+    local PN=$(getval_s ${PN_FILE} ${PN_KEY})
+
+    #echo $M
+    #echo $PN
+
+    local CMD=$(printf "${CMD_FORMAT}" ${PN} ${M})
+    $CMD | tee ${MM_TMP}
+    #$CMD | tee >(grep "OK" | wc -l | getMmInfo ${PN})
+
+    # test
+    grep "OK" ${MM_TMP} | wc -l | getMmInfo $PN
+
+    cd $HERE > /dev/null
+}
+
+# get build info(mm)
+# getMmInfo <product-name>
+function getMmInfo()
+{
+    # mtk build log(mm) file
+    local readonly MM_LOG_F='out/target/product/%s_mm.log'
+    MM_LOG=$(printf "${MM_LOG_F}" $1)
+    
+    # debug
+    #echo $MM_LOG
+
+    read IN
+    # OK 
+    if [ ${IN} -gt 0 ]; then
+        #echo -e "\033[41;36mOK  >>> \033[0m" && grep "^Install" ${MM_LOG}
+        color_str '>>> Okay >>>' && grep "^Install" ${MM_LOG} ; grep "^target StaticLib" ${MM_LOG} ; grep "^target Prebuilt" ${MM_LOG}
+    # FAIL 
+    else 
+        color_str '>>> Fail >>>' && grep "error" ${MM_LOG}
+        gedit ${MM_LOG} &
+    fi
+    color_str '<<<<<<<<<<<<'
+}
+
+# color_str <text>
+function color_str()
+{
+    echo -e '\033[47;31m'$1'\033[0m'
+}
+
+# dcp <PRJ> <PRJ-PATH> {compress ? (T or other)}
+# Sample: dcp A9 A9_WORK T
+function dcp()
+{
+    local Z="T"
+
+    [ ! `getval ${PRJFILE} ${1} ${FIELDN}` ] && echo "$0 [OPTION]... PROJECT" && exit 0
+
+    local HERE=`pwd`
+
+    # copy bins
+    getbins $1 $2 "IMGS" $Z
+
+    cd $HERE > /dev/null
+}
+
+function radb()
+{
+    #ANDROID_SDK=~/bin/android-sdk
+
+    cd $ANDROID_SDK/platform-tools > /dev/null
+
+    ./adb kill-server
+    sudo ./adb start-server
+}
+
+function rtadb() 
+{
+    cd $HOME/bin > /dev/null
+
+    ./tadb kill-server
+    sudo ./tadb start-server
+}
+
+function drmnt()
+{
+    #adb shell mount -o remount,rw system system
+    adb remount
+}
+
+# dpush <obj> <path>
+function dpush()
+{
+    # adb push xxx system/app bin lib
+    readonly local CMD_FORMAT="adb push %s %s"
+
+    local HERE=`pwd`
+
+    local CMD=$(printf "${CMD_FORMAT}" $1 $2)
+    drmnt && croot && $CMD
+
+    cd $HERE > /dev/null
+}
+
+# <*> <obj>
+# adb push to (sustem/app|bin|lib|framework)
+function dp_star()
+{
+    case "$1" in
+        APP) dpush $2 "system/app";;
+        BIN) dpush $2 "system/bin";;
+        LIB) dpush $2 "system/lib";;
+        JAR) dpush $2 "system/framework";;
+    esac
+}
+
+###############################################################################
+
+
+case `basename $0` in
+    dpt)
+        # go on
+        ;;
+    dmm)
+        dmm $@
+        exit 0
+        ;;
+    dcp)
+        dcp $@
+        exit 0
+        ;;
+    radb)
+        radb
+        exit 0
+        ;;
+    rtadb)
+        rtadb
+        exit 0
+        ;;
+    dpush)
+        dpush $@
+        exit 0
+        ;;
+    dp_*)
+        case `basename $0` in
+            dp_app) dp_star "APP" $@;;
+            dp_bin) dp_star "BIN" $@;;
+            dp_lib) dp_star "LIB" $@;;
+            dp_jar) dp_star "JAR" $@;;
+        esac
+        exit 0
+        ;;
+    dmc)
+        #dmc $@
+        exit 0
+        ;;
+    *)
+        echo "unknown argument..."
+        exit 1
+        ;;
+esac
+
+################################# dpt #########################################
+
+case "$1" in
+    setup)
+        ln -s dpt dcp
+        ln -s dpt dmm
+        ln -s dpt dp_app
+        ln -s dpt dp_bin
+        ln -s dpt dp_lib
+        ln -s dpt dp_jar
+        ln -s dpt dpush
+        ln -s dpt radb
+        ln -s dpt rtadb
+
+        echo "finish."
+        exit 0
+        ;;
+esac
+
+# #############################################################################
+# START
+#
+[ $# -lt 1 ] && exec echo "$usage"
+
+
+#eval url=\${$prj}
+
+#workspace="${prj}_WORK"
+
+g_down="T"
+g_build="F"
+g_copy="F"
+g_co="F"
+g_user="F"
+g_zip="F"
+g_version=""
+g_workspace=""
+
+g_BUILD="F"
+g_COPY="F"
+
+while getopts "hvdbuczBCV:P:" arg
+do
+    case $arg in
+    # download codes
+    d)
+        g_co="T"
+        ;;
+    V)
+        g_version="$OPTARG"
+        #echo "version = ${g_version}"
+        ;;
+    P)
+        g_workspace="$OPTARG"
+        ;;
+    # ===================
+    # build about
+    b)
+        g_build="T"
+        ;;
+    u)
+        g_user="T"
+        ;;
+    # ===================
+    # copy bins
+    c)
+        g_copy="T"
+        ;;
+    z)
+        g_zip="T"
+        ;;
+    
+    #====================
+    B)
+        g_BUILD="T"
+        ;;
+    C)
+        g_COPY="T"
+        ;;
+    #====================
+
+    h)  exec echo "$usage";;
+    v)  exec echo "$version";;
+    ?)  echo "unknown argument..."
+        exit 1
+        ;;
+    esac
+done
+
+
+# PROJECT
+eval prj=\${$#}
+# if not has special project then exit.
+[ ! `getval ${PRJFILE} ${prj} ${FIELDN}` ] && echo "$0 [OPTION]... PROJECT" && exit 0
+
+
+#-----------------------------------------
+#
+[ "${g_BUILD}" = "T" ] && g_down="F" && g_build="T" && g_copy="F"
+[ "${g_COPY}" = "T" ] && g_down="F" && g_build="F" && g_copy="T"
+[ "${g_BUILD}" = "T" ] && [ "${g_COPY}" = "T" ] && g_build="T" && g_copy="T"
+#
+#-----------------------------------------
+
+if [ "${g_workspace}" ]; then
+    echo ${g_workspace}
+else 
+    PRE=`getval ${PRJFILE} ${prj} ${FIELDPR}`
+    if [ "${g_co}" = "T" ]; then
+        g_workspace=$(test ${PRE} && echo "${PRE}" || echo "${prj}")
+    else
+        g_workspace=$(test ${PRE} && echo "${PRE}" || echo "${prj}")"_WORK"
+        if [ "${g_version}" ]; then
+            g_workspace="${g_workspace}-${g_version}"
+        fi
+    fi
+fi
+g_code_url=`getval ${PRJFILE} ${prj} ${FIELDU}`
+g_build_name=`getval ${PRJFILE} ${prj} ${FIELDN}`
+g_build_extras=`getval ${PRJFILE} ${prj} ${FIELDPE}`
+
+# -- info -----------
+echo $g_workspace
+echo $g_code_url
+echo $g_build_name
+# -------------------
+
+# download codes
+if [ "${g_down}" = "T" ]; then
+    getcode ${g_co} ${g_code_url} ${g_workspace} ${g_version}
+    #[ "${g_co}" = "T" ] && exit 0
+fi
+
+# build prj
+if [ "${g_build}" = "T" ]; then
+    echo "Building ..."
+
+    tmp=
+    [ "${g_user}" = "T" ] && tmp="-o=TARGET_BUILD_VARIANT=user"
+
+    tmp="${tmp} ${g_build_extras}"
+    buildprj ${g_workspace} ${g_build_name} "${tmp}"
+fi
+
+# copy bins
+[ "${g_copy}" = "T" ] && getbins ${prj} ${g_workspace} "IMGS" ${g_zip}
+
+
+
+echo "${prj} Finished."
+exit 0

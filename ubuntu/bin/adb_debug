@@ -1,0 +1,4 @@
+#!/bin/bash
+$ANDROID_HOME/platform-tools/adb shell stop
+$ANDROID_HOME/platform-tools/adb shell setprop dalvik.vm.debug 0x600
+$ANDROID_HOME/platform-tools/adb shell start

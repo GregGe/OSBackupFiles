@@ -1,0 +1,4 @@
+#!/bin/bash
+packageName=$1
+pid=`adb shell ps | grep $packageName | awk '{print $2}'`
+$ANDROID_HOME/platform-tools/adb logcat | grep --color=auto $pid

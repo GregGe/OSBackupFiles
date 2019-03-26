@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ $# != 1 ]
+then 
+    echo "please input the app's name!"
+else
+    pid=`adb shell "ps | grep -w $1$" | awk '{print $2}'`
+    if test $pid
+    then
+        adb shell kill -9 ${pid}
+    else
+        echo "the app's name: $1 cannot find!"
+    fi 
+fi

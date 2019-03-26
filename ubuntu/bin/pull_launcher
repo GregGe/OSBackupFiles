@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ $# == 0 ]
+then 
+    adb remount
+    adb pull /data/data/com.freeme.home/databases/launcher.db ~/share
+    echo com.freeme.home
+else
+    adb remount
+    adb pull /data/data/com.freeme.launcher/databases/launcher.db ~/share
+    echo com.freeme.launcher
+fi

@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo $ANDROID_HOME/platform-tools/gadb kill-server
+sudo $ANDROID_HOME/platform-tools/gadb start-server
+sudo $ANDROID_HOME/platform-tools/gadb remount

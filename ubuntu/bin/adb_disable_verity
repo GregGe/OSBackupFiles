@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo $ANDROID_HOME/platform-tools/adb root
+sudo $ANDROID_HOME/platform-tools/adb disable-verity
+sudo $ANDROID_HOME/platform-tools/adb reboot

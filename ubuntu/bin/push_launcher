@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ $# == 0 ]
+then 
+    adb remount
+    adb push ~/share/launcher.db /data/data/com.tydtech.launcher/databases
+    adb shell rm /data/data/com.tydtech.launcher/databases/launcher.db-journal
+    adb_kill com.tydtech.launcher
+else
+    adb remount
+    adb push ~/share/launcher.db /data/data/com.android.launcher/databases
+    adb shell rm /data/data/com.android.launcher/databases/launcher.db-journal
+    adb_kill com.android.launcher
+fi
