@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AntConfiguration">
+    <defaultAnt bundledAnt="true" />
+    <buildFile url="file://$PROJECT_DIR$/ide/intellij/build.xml">
+      <additionalClassPath />
+      <antReference projectDefault="true" />
+      <customJdkName value="" />
+      <maximumHeapSize value="128" />
+      <properties />
+    </buildFile>
+  </component>
+  <component name="BuildJarProjectSettings">
+    <option name="BUILD_JARS_ON_MAKE" value="false" />
+  </component>
+  <component name="CodeStyleProjectProfileManger">
+    <option name="PROJECT_PROFILE" />
+    <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
+  </component>
+  <component name="CodeStyleSettingsManager">
+    <option name="PER_PROJECT_SETTINGS">
+      <value>
+        <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
+        <option name="RIGHT_MARGIN" value="80" />
+        <option name="BINARY_OPERATION_SIGN_ON_NEXT_LINE" value="true" />
+        <option name="PLACE_ASSIGNMENT_SIGN_ON_NEXT_LINE" value="true" />
+      </value>
+    </option>
+  </component>
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="800" />
+    <resourceExtensions>
+      <entry name=".+\.(properties|xml|html|dtd|tld)" />
+      <entry name=".+\.(gif|png|jpeg|jpg)" />
+    </resourceExtensions>
+    <wildcardResourcePatterns>
+      <entry name="?*.properties" />
+      <entry name="?*.xml" />
+      <entry name="?*.gif" />
+      <entry name="?*.png" />
+      <entry name="?*.jpeg" />
+      <entry name="?*.jpg" />
+      <entry name="?*.html" />
+      <entry name="?*.dtd" />
+      <entry name="?*.tld" />
+    </wildcardResourcePatterns>
+  </component>
+  <component name="DependenciesAnalyzeManager">
+    <option name="myForwardDirection" value="false" />
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="EclipseCompilerSettings">
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+    <option name="DEPRECATION" value="false" />
+  </component>
+  <component name="EclipseEmbeddedCompilerSettings">
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+    <option name="DEPRECATION" value="false" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+    <option name="MAXIMUM_HEAP_SIZE" value="128" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="PRINT_LINE_NUMBERS" value="false" />
+    <option name="OPEN_IN_BROWSER" value="false" />
+    <option name="OUTPUT_DIRECTORY" />
+  </component>
+  <component name="IdProvider" IDEtalkID="C8FEF8FDDA8778BFC0BDE2CF5A21CB2C" />
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="JavacSettings">
+    <option name="DEPRECATION" value="false" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-Xlint:all,-deprecation,-serial" />
+    <option name="MAXIMUM_HEAP_SIZE" value="800" />
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" />
+    <option name="OPTION_SCOPE" value="protected" />
+    <option name="OPTION_HIERARCHY" value="true" />
+    <option name="OPTION_NAVIGATOR" value="true" />
+    <option name="OPTION_INDEX" value="true" />
+    <option name="OPTION_SEPARATE_INDEX" value="true" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
+    <option name="OPTION_DEPRECATED_LIST" value="true" />
+    <option name="OTHER_OPTIONS" value="" />
+    <option name="HEAP_SIZE" />
+    <option name="LOCALE" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+  </component>
+  <component name="JikesSettings">
+    <option name="JIKES_PATH" value="" />
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="DEPRECATION" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="IS_EMACS_ERRORS_MODE" value="true" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+  </component>
+  <component name="LogConsolePreferences">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownNavigator.ProfileManager" default="" pdf-export="" />
+  <component name="MarkdownProjectSettings" wasCopied="false">
+    <PreviewSettings splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.0" maxImageWidth="0" showGitHubPageIfSynced="false" allowBrowsingInPreview="false" synchronizePreviewPosition="true" highlightPreviewType="NONE" highlightFadeOut="5" highlightOnTyping="true" synchronizeSourcePosition="true" verticallyAlignSourceAndPreviewSyncPosition="true" showSearchHighlightsInPreview="false" showSelectionInPreview="true" openRemoteLinks="true" replaceUnicodeEmoji="false" lastLayoutSetsDefault="false">
+      <PanelProvider>
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.panel" providerName="Default - Swing" />
+      </PanelProvider>
+    </PreviewSettings>
+    <ParserSettings gitHubSyntaxChange="false" emojiShortcuts="1" emojiImages="0">
+      <PegdownExtensions>
+        <option name="ABBREVIATIONS" value="false" />
+        <option name="ANCHORLINKS" value="true" />
+        <option name="ASIDE" value="false" />
+        <option name="ATXHEADERSPACE" value="true" />
+        <option name="AUTOLINKS" value="true" />
+        <option name="DEFINITIONS" value="false" />
+        <option name="DEFINITION_BREAK_DOUBLE_BLANK_LINE" value="false" />
+        <option name="FENCED_CODE_BLOCKS" value="true" />
+        <option name="FOOTNOTES" value="false" />
+        <option name="HARDWRAPS" value="false" />
+        <option name="HTML_DEEP_PARSER" value="false" />
+        <option name="INSERTED" value="false" />
+        <option name="QUOTES" value="false" />
+        <option name="RELAXEDHRULES" value="true" />
+        <option name="SMARTS" value="false" />
+        <option name="STRIKETHROUGH" value="true" />
+        <option name="SUBSCRIPT" value="false" />
+        <option name="SUPERSCRIPT" value="false" />
+        <option name="SUPPRESS_HTML_BLOCKS" value="false" />
+        <option name="SUPPRESS_INLINE_HTML" value="false" />
+        <option name="TABLES" value="true" />
+        <option name="TASKLISTITEMS" value="true" />
+        <option name="TOC" value="false" />
+        <option name="WIKILINKS" value="false" />
+      </PegdownExtensions>
+      <ParserOptions>
+        <option name="ADMONITION_EXT" value="false" />
+        <option name="ATTRIBUTES_EXT" value="false" />
+        <option name="COMMONMARK_LISTS" value="true" />
+        <option name="DUMMY" value="false" />
+        <option name="EMOJI_SHORTCUTS" value="true" />
+        <option name="ENUMERATED_REFERENCES_EXT" value="false" />
+        <option name="FLEXMARK_FRONT_MATTER" value="false" />
+        <option name="GFM_LOOSE_BLANK_LINE_AFTER_ITEM_PARA" value="false" />
+        <option name="GFM_TABLE_RENDERING" value="true" />
+        <option name="GITBOOK_URL_ENCODING" value="false" />
+        <option name="GITHUB_LISTS" value="false" />
+        <option name="GITHUB_WIKI_LINKS" value="false" />
+        <option name="GITLAB_EXT" value="false" />
+        <option name="GITLAB_MATH_EXT" value="false" />
+        <option name="GITLAB_MERMAID_EXT" value="false" />
+        <option name="HEADER_ID_NON_ASCII_TO_LOWERCASE" value="false" />
+        <option name="HEADER_ID_NO_DUPED_DASHES" value="false" />
+        <option name="JEKYLL_FRONT_MATTER" value="false" />
+        <option name="MACROS_EXT" value="false" />
+        <option name="NO_TEXT_ATTRIBUTES" value="false" />
+        <option name="PARSE_HTML_ANCHOR_ID" value="false" />
+        <option name="PLANTUML_FENCED_CODE" value="false" />
+        <option name="PUML_FENCED_CODE" value="false" />
+        <option name="SIM_TOC_BLANK_LINE_SPACER" value="true" />
+      </ParserOptions>
+    </ParserSettings>
+    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" embedUrlContent="false" addPageHeader="true" embedImages="false" embedHttpImages="false" imageUriSerials="false" addDocTypeHtml="true" noParaTags="false" plantUmlConversion="0" mathConversion="-1">
+      <GeneratorProvider>
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.generator" providerName="Default Swing HTML Generator" />
+      </GeneratorProvider>
+      <headerTop />
+      <headerBottom />
+      <bodyTop />
+      <bodyBottom />
+    </HtmlSettings>
+    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="false" isCssTextEnabled="false" isDynamicPageWidth="true">
+      <StylesheetProvider>
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.css" providerName="Default Swing Stylesheet" />
+      </StylesheetProvider>
+      <ScriptProviders />
+      <cssText />
+      <cssUriHistory />
+    </CssSettings>
+    <HtmlExportSettings updateOnSave="false" parentDir="" targetDir="" cssDir="" scriptDir="" plainHtml="false" imageDir="" copyLinkedImages="false" imageUniquifyType="0" targetPathType="2" targetExt="" useTargetExt="false" noCssNoScripts="false" useElementStyleAttribute="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" linkFormatType="HTTP_ABSOLUTE" />
+    <LinkMapSettings>
+      <textMaps />
+    </LinkMapSettings>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
+    <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="10">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="3" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="9">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="6" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="Palette2">
+    <group name="Swing">
+      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+      </item>
+      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
+        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+        <initial-values>
+          <property name="text" value="Button" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="RadioButton" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="CheckBox" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="Label" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+          <preferred-size width="-1" height="20" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+      </item>
+    </group>
+  </component>
+  <component name="ProjectCodeStyleConfiguration">
+    <code_scheme name="Project" version="173">
+      <Objective-C-extensions>
+        <file>
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Import" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Macro" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Typedef" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Enum" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Constant" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Global" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Struct" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="FunctionPredecl" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Function" />
+        </file>
+        <class>
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Property" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Synthesize" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="InitMethod" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="StaticMethod" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="InstanceMethod" />
+          <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="DeallocMethod" />
+        </class>
+        <extensions>
+          <pair source="cpp" header="h" fileNamingConvention="NONE" />
+          <pair source="c" header="h" fileNamingConvention="NONE" />
+        </extensions>
+      </Objective-C-extensions>
+    </code_scheme>
+  </component>
+  <component name="ProjectFileVersion" converted="true" />
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android.iml" filepath="$PROJECT_DIR$/android.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file:///tmp/intellij/Volumes/Work/Android/classes" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Perforce" />
+    <mapping directory="$PROJECT_DIR$/art" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bionic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bootable/recovery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/blueprint" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/kati" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/make" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/soong" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/compatibility/cdd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dalvik" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/developers/build" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/developers/demos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/developers/samples/android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/development" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/asus/fugu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/asus/fugu-kernel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/arm64" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/armv7-a-neon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/car" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/goldfish" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/goldfish-opengl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/mini-emulator-arm64" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/mini-emulator-armv7-a-neon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/mini-emulator-mips" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/mini-emulator-mips64" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/mini-emulator-x86" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/mini-emulator-x86_64" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/mips" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/mips64" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/qemu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/uml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/x86" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/generic/x86_64" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/accessory/arduino" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/accessory/demokit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/atv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/contexthub" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/dragon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/dragon-kernel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/marlin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/marlin-kernel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/muskie" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/taimen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/vrservices" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/wahoo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/google/wahoo-kernel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/huawei/angler" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/huawei/angler-kernel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/lge/bullhead" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/lge/bullhead-kernel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/linaro/bootloader/OpenPlatformPkg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/linaro/bootloader/arm-trusted-firmware" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/linaro/bootloader/edk2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/linaro/hikey" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/linaro/hikey-kernel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/device/sample" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/docs/source.android.com" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/ImageMagick" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/Microsoft-GSL" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/aac" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/abi-compliance-checker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/abi-dumper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/android-clat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/androidplot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/ant-glob" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/antlr" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/apache-commons-math" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/apache-harmony" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/apache-http" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/apache-xml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/archive-patcher" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/arm-neon-tests" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/autotest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/avb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/bart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/bison" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/blktrace" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/boringssl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/bouncycastle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/brotli" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/bsdiff" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/bzip2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/c-ares" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/caliper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/cblas" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/chromium-libpac" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/chromium-trace" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/chromium-webview" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/clang" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/cmockery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/compiler-rt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/conscrypt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/crcalc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/cros/system_api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/curl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/dagger2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/deqp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/desugar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/devlib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/dexmaker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/dhcpcd-6.8.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/dlmalloc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/dng_sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/dnsmasq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/doclava" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/donuts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/drm_hwcomposer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/droiddriver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/drrickorang" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/dtc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/e2fsprogs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/easymock" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/eigen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/elfutils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/esd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/expat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/eyes-free" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/f2fs-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/fdlibm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/fec" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/fio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/flac" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/flatbuffers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/fmtlib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/fonttools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/freetype" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/fsck_msdos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/gemmlowp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/giflib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/glide" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/google-api-services-storage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/google-benchmark" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/google-breakpad" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/google-fonts/carrois-gothic-sc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/google-fonts/coming-soon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/google-fonts/cutive-mono" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/google-fonts/dancing-script" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/google-tv-pairing-protocol" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/googletest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/gptfdisk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/guava" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/guice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/hamcrest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/harfbuzz_ng" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/hyphenation-patterns" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/icu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/ims" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/iproute2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/ipsec-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/iptables" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/iputils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/iw" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/jacoco" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/jarjar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/javasqlite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/javassist" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/jcommander" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/jemalloc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/jline" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/jmdns" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/jsilver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/jsmn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/jsoncpp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/jsr305" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/jsr330" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/junit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/junit-params" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/kernel-headers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/kmod" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/ksoap2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libavc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libbackup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libbrillo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libcap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libcap-ng" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libchrome" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libconstrainedcrypto" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libcups" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libcxx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libcxxabi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libdaemon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libdivsufsort" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libdrm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libedit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libese" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libevent" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libexif" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libgsm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libhevc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libjpeg-turbo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libldac" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/liblzf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libmicrohttpd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libmojo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libmpeg2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libmtp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libnetfilter_conntrack" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libnfnetlink" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libnl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libogg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libopus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libpcap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libphonenumber" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libpng" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libtextclassifier" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libunwind" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libunwind_llvm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libusb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libusb-compat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libvncserver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libvpx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libvterm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libxml2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/libyuv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/linux-kselftest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/lisa" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/littlemock" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/lld" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/llvm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/lmfit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/ltp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/lz4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/lzma" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/markdown" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/mdnsresponder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/mesa3d" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/messageformat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/minijail" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/mksh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/mmc-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/mockftpserver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/mockito" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/mockwebserver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/modp_b64" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/mp4parser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/mtpd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/nanohttpd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/nanopb-c" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/naver-fonts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/netcat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/netperf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/neven" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/nfacct" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/nist-pkits" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/nist-sip" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/noto-fonts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/oauth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/objenesis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/okhttp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/opencv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/openssh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/owasp/sanitizer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/parameter-framework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/pcre" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/pdfium" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/piex" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/ply" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/ppp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/proguard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/protobuf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/python/cpython2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/python/cpython3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/r8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/regex-re2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/replicaisland" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/rmi4utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/robolectric" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/roboto-fonts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/rootdev" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/safe-iop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/scrypt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/seccomp-tests" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/selinux" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/sfntly" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/shflags" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/skia" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/sl4a" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/slf4j" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/smali" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/snakeyaml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/sonic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/sonivox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/speex" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/spirv-llvm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/sqlite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/squashfs-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/strace" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/stressapptest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/svox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/swiftshader" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/syslinux" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/tagsoup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/tcpdump" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/testng" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/timezonepicker-support" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/tinyalsa" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/tinycompress" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/tinyxml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/tinyxml2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/toolchain-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/toybox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/tpm2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/trappy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/tremolo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/unicode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/universal-tween-engine" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/v4l2_codec2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/v8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/valgrind" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/vboot_reference" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/vixl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/vogar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/volley" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/vulkan-validation-layers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/walt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/webp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/webrtc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/wpa_supplicant_8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/wycheproof" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/x264" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/xmlrpcpp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/xmlwriter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/xmp_toolkit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/xz-embedded" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/zlib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/zopfli" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/external/zxing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/av" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/base" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/compile/libbcc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/compile/mclinker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/compile/slang" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/data-binding" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/ex" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/hardware/interfaces" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/layoutlib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/minikin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/ml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/multidex" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/native" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/bitmap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/bluetooth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/calendar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/chips" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/colorpicker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/datetimepicker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/inputconnectioncommon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/inputmethodcommon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/net/ethernet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/net/ims" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/net/lowpan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/net/voip" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/net/wifi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/photoviewer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/setupwizard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/telephony" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/timezonepicker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/opt/vcard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/rs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/support" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/webview" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frameworks/wilhelm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/akm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/broadcom/libbt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/broadcom/wlan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/google/apf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/google/easel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/audio_media" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/bootstub" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/common/bd_prov" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/common/libmix" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/common/libstagefrighthw" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/common/libva" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/common/libwsbm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/common/omx-components" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/common/utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/common/wrs_omxil_core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/img/hwcomposer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/img/psb_headers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/img/psb_video" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/intel/sensors" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/interfaces" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/invensense" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/libhardware" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/libhardware_legacy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/marvell/bt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/audio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/bootctrl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/bt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/camera" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/data/ipacfg-mgr" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/display" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/gps" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/keymaster" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/media" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/msm8960" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/msm8994" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/msm8996" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/msm8998" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/msm8x09" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/msm8x26" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/msm8x27" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/msm8x84" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/power" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/qcom/wlan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hardware/ril" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kernel/tests" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libcore" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libnativehelper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/BasicSmsReceiver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Bluetooth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Browser2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Calendar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Camera2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/Dialer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/Hvac" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/LatinIME" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/LensPicker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/LocalMediaPlayer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/Media" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/Messenger" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/Overview" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/Radio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/Settings" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/Stream" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/SystemUpdater" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/UserManagement" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Car/libs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/CarrierConfig" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/CellBroadcastReceiver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/CertInstaller" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Contacts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/DeskClock" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/DevCamera" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Dialer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/DocumentsUI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Email" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/EmergencyInfo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/ExactCalculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Gallery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Gallery2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/HTMLViewer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/KeyChain" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Launcher2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Launcher3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/LegacyCamera" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/ManagedProvisioning" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Messaging" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Music" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/MusicFX" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Nfc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/OneTimeInitializer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/PackageInstaller" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/PhoneCommon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Protips" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Provision" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/QuickSearchBox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/SafetyRegulatoryInfo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Settings" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/SoundRecorder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/SpareParts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Stk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/StorageManager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/TV" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Tag" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Terminal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/Test/connectivity" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/TimeZoneData" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/TimeZoneUpdater" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/TvSettings" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/UnifiedEmail" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/apps/WallpaperPicker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/experimental" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/inputmethods/LatinIME" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/inputmethods/OpenWnn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/ApplicationsProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/BlockedNumberProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/BookmarkProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/CalendarProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/CallLogProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/ContactsProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/DownloadProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/MediaProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/PartnerBookmarksProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/TelephonyProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/TvProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/providers/UserDictionaryProvider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/screensavers/Basic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/screensavers/PhotoTable" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/screensavers/WebView" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/services/BuiltInPrintService" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/services/Car" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/services/Mms" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/services/NetworkRecommendation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/services/Telecomm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/services/Telephony" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/packages/wallpapers/LivePicker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/platform_testing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/abi-dumps/ndk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/abi-dumps/vndk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/android-emulator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/build-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/checkcolor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/checkstyle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/clang/host/darwin-x86" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/clang/host/linux-x86" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/deqp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/devtools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gdb/darwin-x86" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gdb/linux-x86" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/go/darwin-x86" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/go/linux-x86" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/gradle-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/jdk/jdk8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/libs/libedit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/maven_repo/android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/maven_repo/bumptech" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/misc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/ndk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/python/darwin-x86/2.7.5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/python/linux-x86/2.7.5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/qemu-kernel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prebuilts/tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/bt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/ca-certificates" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/chre" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/connectivity/wificond" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/connectivity/wifilogd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/extras" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/gatekeeper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/hardware/interfaces" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/hwservicemanager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/keymaster" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/libfmq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/libhidl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/libhwbinder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/libufdt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/libvintf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/media" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/netd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/nfc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/nvram" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/security" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/sepolicy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/timezone" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/tools/aidl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/tools/hidl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/tpm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/update_engine" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/system/vold" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/framework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/sts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/vts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/vts-testcase/fuzz" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/vts-testcase/hal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/vts-testcase/hal-trace" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/vts-testcase/kernel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/vts-testcase/performance" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/vts-testcase/security" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/vts-testcase/vndk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/toolchain/binutils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tools/apksig" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tools/external/fat32lib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tools/external/gradle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tools/loganalysis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tools/repohooks" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tools/test/connectivity" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tools/tradefederation/contrib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tools/tradefederation/core" vcs="Git" />
+  </component>
+  <component name="com.intellij.jsf.UserDefinedFacesConfigs">
+    <option name="USER_DEFINED_CONFIGS">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+  </component>
+  <component name="uidesigner-configuration">
+    <option name="INSTRUMENT_CLASSES" value="true" />
+    <option name="COPY_FORMS_RUNTIME_TO_OUTPUT" value="true" />
+    <option name="DEFAULT_LAYOUT_MANAGER" value="GridLayoutManager" />
+  </component>
+</project>
